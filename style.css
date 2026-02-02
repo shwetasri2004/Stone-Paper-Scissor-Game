@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('image.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+}
+
+.Transparent-Box {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    /* Box ko screen ke beech mein lane ke liye */
+    position: relative;
+    margin-top: 20px;
+}
+
+.Score-Board {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px; /* Space niche wale section ke liye */
+}
+
+.Score-Card p { 
+    margin: 0; 
+    font-size: 0.9rem;
+    color: #666; font-weight: 
+    bold;
+ }
+.Score-Card span {
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    color: #222; }
+
+/* Result Area Styling */
+.Result-Display {
+    margin-bottom: 25px;
+    min-height: 120px; /* Taki icons aur text ki jagah fix rahe */
+}
+
+#Battle-Area {
+    font-size: 3.5rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#Status-Msg {
+    font-size: 1.3rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Cards Styling */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 15px 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card .icon { font-size: 40px; margin-bottom: 5px; }
+.card p { margin: 0; font-weight: bold; font-size: 0.9rem; }
+
+/* Card Colors */
+.stone-card { background-color: #e3f2fd; }
+.paper-card { background-color: #e8f5e9; }
+.scissors-card { background-color: #fff9c4; }
+
+/* New Game Button */
+#Reset-Btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Reset-Btn:hover { background-color: #000; }

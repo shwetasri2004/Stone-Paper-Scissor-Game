@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stone Paper Scissor</h1>
+
+    <div class="Transparent-Box">
+        <div class="Score-Board">
+            <div class="Score-Card">
+                <p>YOU</p>
+                <span id="User-Score">0</span>
+            </div>   
+            <div class="Score-Card">
+                <p>COMP</p>
+                <span id="Comp-Score">0</span> 
+            </div>
+        </div>
+
+        <div class="Result-Display">
+            <div id="Battle-Area"></div>
+            <h2 id="Status-Msg">Choose Your Move</h2>
+        </div>
+
+        <div class="cards-container">
+            <div class="card stone-card" onclick="play('stone')">
+                <div class="icon">🪨</div>
+                <p>Stone</p>
+            </div>
+            <div class="card paper-card" onclick="play('paper')">
+                <div class="icon">📄</div>
+                <p>Paper</p>
+            </div>
+            <div class="card scissors-card" onclick="play('scissors')">
+                <div class="icon">✂️</div>
+                <p>Scissors</p>
+            </div>
+        </div>
+
+        <button id="Reset-Btn" onclick="resetGame()">New Game</button>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
